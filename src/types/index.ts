@@ -10,10 +10,25 @@ export interface Task {
   priority: "low" | "medium" | "high"; //priority level of the task
   dueDate: string; //due date for the task
 }
-
+/**************************************************/
 //props interface for a TaskList component
 export interface TaskListProps {
-  tasks: Task[]; //array of tasks to display
-  onStatusChange: (taskId: string, newStatus: TaskStatus) => void; //callback when a task's status is updated
-  onDelete: (taskId: string) => void; //callback to delete a task
+  //array of tasks to display
+  tasks: Task[];
+  //callback when a task's status is updated
+  onStatusChange: (taskId: string, newStatus: TaskStatus) => void;
+  //callback to delete a task
+  onDelete: (taskId: string) => void;
 }
+/**************************************************/
+//props interface for a single TaskItem component
+export interface TaskItemProps {
+  //the task object to display
+  task: Task;
+  //callback to update the task status
+  onStatusChange: (taskId: string, newStatus: TaskStatus) => void;
+  //callback to delete the task
+  onDelete: (taskId: string) => void;
+}
+
+/***********************************************/
