@@ -12,14 +12,18 @@ export const TaskList: React.FC<TaskListProps> = ({
 }) => {
   return (
     <div>
-      {tasks.map((task) => (
-        <TaskItem
-          key={task.id}
-          task={task}
-          onStatusChange={onStatusChange}
-          onDelete={onDelete}
-        />
-      ))}
+      {tasks.length === 0 ? (
+        <p>No tasks match the current filters</p>
+      ) : (
+        tasks.map((task) => (
+          <TaskItem
+            key={task.id}
+            task={task}
+            onStatusChange={onStatusChange}
+            onDelete={onDelete}
+          />
+        ))
+      )}
     </div>
   );
 };
