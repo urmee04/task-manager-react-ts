@@ -1,6 +1,6 @@
-/**TaskItem component displays individual task details including title, description, status,
-*priority, and due date. It allows users to change the task status using a dropdown
-and delete the task via a button.*/
+// /**TaskItem component displays individual task details including title, description, status,
+// *priority, and due date. It allows users to change the task status using a dropdown
+// and delete the task via a button.*/
 
 import React from "react";
 import { type Task, type TaskStatus } from "../../types/index";
