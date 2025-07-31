@@ -2,9 +2,9 @@
 
 #### Task Management Application Lab
 
-##### Lab Overview
+#### Lab Overview
 
-In this lab, will create a Task Management application that demonstrates:
+In this lab, I will create a Task Management application that demonstrates:
 
 - Dynamic list rendering
 - Proper key usage
@@ -13,9 +13,11 @@ In this lab, will create a Task Management application that demonstrates:
 - Filtering functionality
 - Component composition
 
-##### Workplace Context
+---
 
-As a frontend developer, working on a task management system. The team needs a component that:
+#### Workplace Context
+
+As a frontend developer, I am working on a task management system where my team needs a component that
 
 - Displays a list of tasks
 - Filters tasks by status
@@ -23,7 +25,7 @@ As a frontend developer, working on a task management system. The team needs a c
 - Is reusable and type-safe
 - Handles various task states efficiently
 
-## Objectives
+#### Objectives
 
 By the end of this lab, will be able to:
 
@@ -33,7 +35,7 @@ By the end of this lab, will be able to:
 - Apply TypeScript interfaces for type safety
 - Implement proper component composition and prop handling
 
-## Setup Instructions
+#### Setup Instructions
 
 1. Create a new React TypeScript project using Vite:
 
@@ -58,7 +60,7 @@ src/
     index.ts
 ```
 
-##### Cloning the Repository
+#### Cloning the Repository
 
 To clone this repository, open terminal or command prompt and run the following command:
 
@@ -93,7 +95,7 @@ To handle state updates for task status chages I used useState to manage task st
 
 Challenges I faced when implementing conditional rendering like handling empty states when filters return no results (the tasks.length === 0 check), ensuring proper re-rendering when both tasks and filters change and managing the display logic for different task statuses (pending/in-progress/completed)
 
-##### References
+#### References
 
 Besides class lectures and materials and code suggestions from lessons, I took help from the following resources to complete the lab.
 
