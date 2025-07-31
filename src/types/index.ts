@@ -32,3 +32,15 @@ export interface TaskItemProps {
 }
 
 /***********************************************/
+
+//props interface for the TaskFilter component
+export interface TaskFilterProps {
+  //callback function triggered when filters change.
+  //accepts an object that can include optional status and priority.
+  onFilterChange: (filters: {
+    //optional task status filter
+    status?: TaskStatus;
+    //optional task priority filter
+    priority?: "low" | "medium" | "high";
+  }) => void;
+}
