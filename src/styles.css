@@ -1,0 +1,55 @@
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+.task-card {
+  border: 1px solid #ccc;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: box-shadow 0.2s;
+}
+
+.task-card:hover {
+  box-shadow: 0 0 10px rgba(228, 10, 10, 0.1);
+}
+
+.task-card.pending {
+  background-color: #fff3cd;
+}
+
+.task-card.in-progress {
+  background-color: #cce5ff;
+}
+
+.task-card.completed {
+  background-color: #d4edda;
+}
+
+.task-card.high {
+  border-left: 6px solid red;
+}
+
+.task-card.medium {
+  border-left: 6px solid orange;
+}
+
+.task-card.low {
+  border-left: 6px solid green;
+}
+
+.filter-panel {
+  display: flex;
+  margin-left: 1.5rem;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+button {
+  margin-left: 2rem;
+}
+button:active {
+  transform: scale(0.98);
+  background-color: #ddd;
+}
