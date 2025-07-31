@@ -13,7 +13,7 @@ export const TaskList: React.FC<TaskListProps> = ({
   return (
     <div>
       {tasks.length === 0 ? (
-        <p>No tasks match the current filters</p>
+        <p className="error">No tasks match the current filters</p>
       ) : (
         tasks.map((task) => (
           <TaskItem
