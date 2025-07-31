@@ -19,21 +19,21 @@ export const TaskFilter: React.FC<TaskFilterProps> = ({ onFilterChange }) => {
     <div className="filter-panel">
       {/* Dropdown for selecting task status */}
       <select onChange={(e) => setStatus(e.target.value)}>
-        <option value="">All</option>
+        <option value="">All Statuses</option>
         <option value="pending">Pending</option>
         <option value="in-progress">In Progress</option>
         <option value="completed">Completed</option>
       </select>
       {/* Dropdown for selecting task priority */}
       <select onChange={(e) => setPriority(e.target.value)}>
-        <option value="">All</option>
+        <option value="">All Priorities</option>
         <option value="low">Low</option>
         <option value="medium">Medium</option>
         <option value="high">High</option>
       </select>
 
       {/* Button to apply the selected filters */}
-      <button onClick={handleFilter}>Apply</button>
+      <button onClick={handleFilter}>Apply Filter</button>
     </div>
   );
 };
