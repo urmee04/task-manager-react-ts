@@ -65,7 +65,7 @@ src/
 To clone this repository, open terminal or command prompt and run the following command:
 
 ```bash
-git clone https://github.com/urmee04/task-manager-react-ts/tree/main/src
+git clone https://github.com/urmee04/task-manager-react-ts.git
 cd task-manager
 npm install
 npm run dev
